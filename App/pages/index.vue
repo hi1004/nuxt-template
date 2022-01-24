@@ -1,25 +1,14 @@
 <template>
   <section class="container">
     <div>
-      <app-logo />
-      <h1 class="title"></h1>
-      <h2 class="subtitle"></h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js" 
-          target="_blank" 
-          class="button--grey">GitHub</a>
-      </div>
+      <AppLogo />
+      <h1 class="title">
+        NUXT
+      </h1>
+      <h2 class="subtitle">
+        template
+      </h2>
     </div>
-    <button
-      type="button"
-      class="btn btn-primary">
-      Primary
-    </button>
   </section>
 </template>
 
@@ -58,17 +47,6 @@ export default {
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-  a {
-    color: $black;
-    text-decoration: none;
-    &:hover {
-      color: $white;
-    }
-  }
 }
 </style>
 

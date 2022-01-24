@@ -1,14 +1,23 @@
 {
-  "name": "nuxt",
+  "name": "nuxt-template",
   "version": "1.0.0",
   "description": "{{ description }}",
   "author": "{{ author }}",
   "private": true,
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "test:unit": "jest --watchAll",
+    "test:unit:silent": "jest --watchAll --silent",
+    "test:e2e": "cypress open",
+    "test:e2e:headless": "cypress run"
+    
   },
   "dependencies": {
     "axios": "^0.25.0",
@@ -42,6 +51,7 @@
     "jest": "^27.4.7",
     "postcss": "^8.4.5",
     "postcss-loader": "^4.3.0",
+    "prettier": "^2.5.1",
     "sass": "^1.49.0",
     "sass-loader": "^10.1.1",
     "vue-jest": "^3.0.7",
